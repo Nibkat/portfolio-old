@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Koen Sparreboom's Portfolio 🌲</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="style.css" type="text/css">
@@ -14,25 +16,119 @@
   </div>
 
   <div class="container">
-    <h1>My work</h1>
+    <h1>My skills 🎓</h1>
+
+    <hr>
+
+    <div class="skills">
+      <div class="skill">
+        <p>C#</p>
+        <div class="skill-percentage">
+          <div class="skill-percentage-inner" style="width: 50%;"></div>
+        </div>
+        <br>
+      </div>
+
+      <div class="skill">
+        <p>Unity3D</p>
+        <div class="skill-percentage">
+          <div class="skill-percentage-inner" style="width: 50%;"></div>
+        </div>
+        <br>
+      </div>
+
+      <br>
+
+      <div class="skill">
+        <p>GIT</p>
+        <div class="skill-percentage">
+          <div class="skill-percentage-inner" style="width: 50%;"></div>
+        </div>
+        <br>
+      </div>
+
+      <div class="skill">
+        <p>C++</p>
+        <div class="skill-percentage">
+          <div class="skill-percentage-inner" style="width: 50%;"></div>
+        </div>
+        <br>
+      </div>
+
+      <div class="skill">
+        <p>HTML</p>
+        <div class="skill-percentage">
+          <div class="skill-percentage-inner" style="width: 50%;"></div>
+        </div>
+        <br>
+      </div>
+
+      <div class="skill">
+        <p>CSS</p>
+        <div class="skill-percentage">
+          <div class="skill-percentage-inner" style="width: 50%;"></div>
+        </div>
+        <br>
+      </div>
+
+      <div class="skill">
+        <p>JavaScript</p>
+        <div class="skill-percentage">
+          <div class="skill-percentage-inner" style="width: 50%;"></div>
+        </div>
+        <br>
+      </div>
+
+      <div class="skill">
+        <p>PHP</p>
+        <div class="skill-percentage">
+          <div class="skill-percentage-inner" style="width: 50%;"></div>
+        </div>
+        <br>
+      </div>
+    </div>
+
+    <h1>My work 📚</h1>
 
     <hr>
 
     <h2>Mediacollege</h2>
 
-    <div id="flip">Jaar 1
-      <span id="arrow">&#x27A4;</span>
+    <div>
+      <div id="yearOneFlip" class="flip">Jaar 1
+        <span id="arrow">&#x27A4;</span>
+      </div>
+
+      <div id="yearOnePanel" class="panel">
+        <img src="https://i.redd.it/eqkolvkcy2wy.jpg" width="50%">
+      </div>
     </div>
 
-    <div id="panel">
-      <img src="data:image/jpeg;base64,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">
+    <br>
+
+    <div>
+      <div id="yearTwoFlip" class="flip">Jaar 2
+        <span id="arrow">&#x27A4;</span>
+      </div>
+
+      <div id="yearTwoPanel" class="panel">
+        <img src="https://i.redd.it/eqkolvkcy2wy.jpg" width="50%">
+      </div>
     </div>
 
-    <h2>My own</h2>
+    <h2>My personal projects</h2>
   </div>
 
   <div class="footer">
-    <h1>There will be epic sites here</h1>
+    <a class="icon" href="https://github.com/LtKst" target="_blank">
+      <img src="resources/github.svg" width="32px">
+    </a>
+    <a class="icon" href="https://www.linkedin.com/in/koen-sparreboom-76bba314a/" target="_blank">
+      <img src="resources/linkedin.svg" width="32px">
+    </a>
+    <a class="icon" href="mailto:koensparreboom@gmail.com" target="_self">
+      <img src="resources/email.svg" width="32px">
+    </a>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

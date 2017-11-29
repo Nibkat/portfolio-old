@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Roboto', sans-serif, Arial;
-  background: linear-gradient( rgba(255, 111, 195, 0.45), rgba(255, 111, 195, 0.45)), url('resources/background.jpg');
+  background: linear-gradient( rgba(255, 111, 195, 0.45), rgba(255, 111, 195, 0.45)), url('resources/Aurora.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
@@ -20,7 +20,6 @@ body {
 
 .container {
   width: 100%;
-  min-height: 100em;
   margin: 0;
   padding: 50px;
   box-sizing: border-box;
@@ -29,7 +28,7 @@ body {
   display: inline-block;
   text-align: center;
   font-family: 'Roboto', sans-serif, Arial;
-  background-color: rgb(5, 25, 35);
+  background-color: rgb(8, 13, 15);
   color: #fff;
 }
 
@@ -41,16 +40,47 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Roboto', sans-serif, Arial;
-  background: linear-gradient( rgba(255, 111, 195, 0.45), rgba(255, 111, 195, 0.45)), url('resources/background.jpg');
+  background: linear-gradient( rgba(255, 111, 195, 0.45), rgba(255, 111, 195, 0.45)), url('resources/Aurora.jpg');
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
   color: #fff;
 }
 
-#flip,
-#panel {
-  border: 2px solid white;
+/* skills */
+
+.skills {
+  width: 750px;
+  display: inline-block;
+}
+
+.skill {
+  width: 325px;
+  display: inline-block;
+  margin: 5px;
+  /*text-align: left;*/
+}
+
+.skill-percentage {
+  background-color: rgb(58, 58, 58);
+  height: 25px;
+  border-radius: 5px;
+}
+
+.skill-percentage-inner {
+  background: linear-gradient( rgba(255, 111, 195, 0.45), rgba(255, 111, 195, 0.45)), url('resources/Aurora.jpg');
+  background-attachment: fixed;
+  height: 100%;
+  border-radius: 5px;
+}
+
+
+/* end skills */
+
+.flip,
+.panel {
+  border: 2px solid #fff;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -58,11 +88,11 @@ body {
   font-size: 1.2em;
 }
 
-#flip {
+.flip {
   cursor: pointer;
 }
 
-#panel {
+.panel {
   border-top: none;
   display: none;
   padding: 25px 0 25px 0;
@@ -74,4 +104,8 @@ body {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   transition: all .5s;
+}
+
+.icon {
+  padding: 0 5px 0 5px;
 }
