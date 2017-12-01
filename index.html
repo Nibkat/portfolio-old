@@ -8,27 +8,40 @@
   <title>Koen Sparreboom's Portfolio</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="http://twemoji.maxcdn.com/2/twemoji.min.js?2.3.1"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
-  <div class="header">
+  <button id="top-button" title="Back to top">&#x27A4;</button>
+
+  <div class="header container">
     <div class="header-inner">
       <h1>Koen Sparreboom's portfolio 🌲</h1>
+      <p class="header-link">
+        <a onclick="scrollToId('#about')">About me 💬</a>
+        <span class="link-spacing">|</span>
+        <a onclick="scrollToId('#skills')">My skills 🎓</a>
+        <span class="link-spacing">|</span>
+        <a onclick="scrollToId('#work')">My work 📚</a>
+        <span class="link-spacing">|</span>
+        <a onclick="scrollToId('#contact')">Contact me 📝</a>
+      </p>
     </div>
   </div>
 
   <div class="container">
-    <h1>About me 💬</h1>
+    <h1 id="about">About me 💬</h1>
 
     <hr>
     <br>
 
     <div class="about">
-      <img style="border-radius:90%" src="https://ih0.redbubble.net/image.425322708.6856/flat,800x800,075,f.jpg" height="128px">
+      <img style="border-radius:90%; border: 3px solid white" src="https://i.imgur.com/ciW0OhT.jpg" height="128px">
 
       <br>
 
-      <p style="font-size: 1.1em; max-width: 500px; min-width: 200px; display:inline-block;">Hello! I'm Koen Sparreboom from
+      <p class="about-me">Hello! I'm Koen Sparreboom from
         <a class="link" href="https://www.google.nl/maps/place/Strekel,+Oostzaan/@52.4341585,4.8688501,17.01z/data=!4m5!3m4!1s0x47c5fd530c911feb:0x3a366bce8e4492f1!8m2!3d52.4341472!4d4.871041"
           target="_blank" title="Location on Google maps">Oostzaan, the Netherlands</a> and I was born on the 9
         <span class="date">th</span> of February in 2000.
@@ -39,11 +52,13 @@
       <br>
     </div>
 
-    <h1>My skills 🎓</h1>
+    <h1 id="skills">My skills 🎓</h1>
 
     <hr>
 
     <div class="skills">
+      <h3>Technical skills</h3>
+
       <div class="skill">
         <p>C#</p>
         <div class="skill-percentage">
@@ -109,9 +124,13 @@
         </div>
         <br>
       </div>
+
+      <h3>Language skills</h3>
+      
+      <p>I can fluently speak and read English and Dutch</p>
     </div>
 
-    <h1>My work 📚</h1>
+    <h1 id="work">My work 📚</h1>
 
     <hr>
 
@@ -119,7 +138,7 @@
 
     <div>
       <div id="yearOneFlip" class="flip">Year 1
-        <span id="arrow">&#x27A4;</span>
+        <span class="arrow">&#x27A4;</span>
       </div>
 
       <div id="yearOnePanel" class="panel">
@@ -131,7 +150,7 @@
 
     <div>
       <div id="yearTwoFlip" class="flip">Year 2
-        <span id="arrow">&#x27A4;</span>
+        <span class="arrow">&#x27A4;</span>
       </div>
 
       <div id="yearTwoPanel" class="panel">
@@ -140,34 +159,38 @@
     </div>
 
     <h2>My personal projects</h2>
+
+    <br>
+
+    <h1 id="contact">Contact me 📝</h1>
+    <hr>
+    <br>
+
+    <a href="https://github.com/LtKst" target="_blank"><img class="icon" src="resources/icons/github-logo-1.svg" width="32px"></a>
+
+    <a href="https://www.linkedin.com/in/koen-sparreboom-76bba314a/" target="_blank"><img class="icon" src="resources/icons/linkedin-logo-1.svg" width="32px"></a>
+
+    <a href="https://twitter.com/LieutenantKst" target="_blank"><img class="icon" src="resources/icons/twitter-logo-shape.svg" width="32px"></a>
+
+    <br>
+    <br>
+
+    <span>Email: </span>
+    <a class="link" href="mailto:koensparreboom@gmail.com">koensparreboom@gmail.com</a>
+    <br>
+    <span>School email:</span>
+    <a class="link" href="mailto:22084@ma-web.nl">22084@ma-web.nl</a>
   </div>
 
-  <div class="footer">
+  <div class="footer container">
     <div class="footer-inner">
-      <a href="https://github.com/LtKst" target="_blank"><img class="icon" src="resources/icons/github-logo-1.svg" width="32px"></a>
-
-      <a href="https://www.linkedin.com/in/koen-sparreboom-76bba314a/" target="_blank"><img class="icon" src="resources/icons/linkedin-logo-1.svg" width="32px"></a>
-
-      <br>
-      <br>
-
-      <span>Email: </span>
-      <a class="link" href="mailto:koensparreboom@gmail.com">koensparreboom@gmail.com</a>
-      <br>
-      <span>School email:</span>
-      <a class="link" href="mailto:22084@ma-web.nl">22084@ma-web.nl</a>
-
-      <br>
-      <br>
-
-      <div>GitHub & LinkedIn icons made by
+      <div>GitHub, LinkedIn & Twitter icons made by
         <a class="link" href="http://www.freepik.com" title="Freepik" target="_blank">Freepik</a>, licensed by
         <a class="link" href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
       </div>
     </div>
   </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="script.js"></script>
 </body>
 

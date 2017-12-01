@@ -29,6 +29,8 @@
 
 <body>
 
+    <div id="twemoji"></div>
+
     <div class="skills">
         <p>C#</p>
         <div class="skill-percentage">
@@ -57,7 +59,9 @@
         <hr>
     </div>
 
-    <script></script>
+    <script src="http://twemoji.maxcdn.com/2/twemoji.min.js?2.3.1"></script>
+    
+    <script>document.getElementById("twemoji").innerHTML = twemoji.parse('I \u2764\uFE0F emoji!');</script>
 
 </body>
 

@@ -3,19 +3,41 @@ body {
   margin: 0;
 }
 
+p {
+  font-size: 1.1em;
+}
+
+#top-button {
+  width: 48px;
+  height: 48px;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background: rgba(107, 191, 255, 0.6);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 90%;
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
 .header {
-  width: 100%;
   height: 200px;
-  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Roboto', sans-serif, Arial;
   background: linear-gradient( rgba(146, 206, 255, 0.45), rgba(146, 206, 255, 0.45)), url('resources/Aurora.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
-  color: #fff;
 }
 
 .container {
@@ -33,19 +55,15 @@ body {
 }
 
 .footer {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
   padding: 25px 0 25px 0;
-  font-family: 'Roboto', sans-serif, Arial;
   background: linear-gradient( rgba(146, 206, 255, 0.45), rgba(146, 206, 255, 0.45)), url('resources/Aurora.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
-  color: #fff;
 }
 
 .header-inner,
@@ -53,9 +71,7 @@ body {
   text-align: center;
 }
 
-
 /* start skills */
-
 .skills {
   width: 750px;
   display: inline-block;
@@ -84,13 +100,9 @@ body {
   border-radius: 5px;
   font-style: italic;
 }
-
-
 /* end skills */
 
-
 /* start panels */
-
 .flip,
 .panel {
   border: 2px solid #fff;
@@ -111,15 +123,13 @@ body {
   padding: 25px 0 25px 0;
 }
 
-#arrow {
+.arrow {
   display: inline-block;
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   transition: all .5s;
 }
-
-
 /* end panels */
 
 .icon {
@@ -140,6 +150,44 @@ body {
   vertical-align: baseline;
 }
 
+.header-link a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header-link a:hover {
+  color: #fff;
+}
+
+.header-link a {
+  color: #fff;
+  text-decoration: none;
+  transition: text-decoration 0.2s;
+}
+
+.header-link a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.header-link a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
 .link {
   color: #fff;
   text-decoration: none;
@@ -152,4 +200,15 @@ body {
 
 .link:hover {
   color: #b6b6b6;
+}
+
+.about-me {
+  max-width: 500px;
+  min-width: 200px;
+  display: inline-block;
+}
+
+.link-spacing {
+  margin: 0 1em 0 1em;
+  cursor: default;
 }
