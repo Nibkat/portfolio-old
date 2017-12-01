@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Roboto', sans-serif, Arial;
-  background: linear-gradient( rgba(255, 111, 195, 0.45), rgba(255, 111, 195, 0.45)), url('resources/Aurora.jpg');
+  background: linear-gradient( rgba(146, 206, 255, 0.45), rgba(146, 206, 255, 0.45)), url('resources/Aurora.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
@@ -34,13 +34,13 @@ body {
 
 .footer {
   width: 100%;
-  height: 100px;
-  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 25px 0 25px 0;
   font-family: 'Roboto', sans-serif, Arial;
-  background: linear-gradient( rgba(255, 111, 195, 0.45), rgba(255, 111, 195, 0.45)), url('resources/Aurora.jpg');
+  background: linear-gradient( rgba(146, 206, 255, 0.45), rgba(146, 206, 255, 0.45)), url('resources/Aurora.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -48,7 +48,13 @@ body {
   color: #fff;
 }
 
-/* skills */
+.header-inner,
+.footer-inner {
+  text-align: center;
+}
+
+
+/* start skills */
 
 .skills {
   width: 750px;
@@ -69,14 +75,21 @@ body {
 }
 
 .skill-percentage-inner {
-  background: linear-gradient( rgba(255, 111, 195, 0.45), rgba(255, 111, 195, 0.45)), url('resources/Aurora.jpg');
-  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
+  background: linear-gradient( rgba(146, 206, 255, 0.45), rgba(146, 206, 255, 0.45)), url('resources/Aurora.jpg');
+  background-attachment: fixed;
   border-radius: 5px;
+  font-style: italic;
 }
 
 
 /* end skills */
+
+
+/* start panels */
 
 .flip,
 .panel {
@@ -106,6 +119,37 @@ body {
   transition: all .5s;
 }
 
+
+/* end panels */
+
 .icon {
   padding: 0 5px 0 5px;
+  filter: invert(100%);
+  transition: transform 0.2s;
+}
+
+.icon:hover {
+  transform: scale(1.15);
+}
+
+.date {
+  top: -0.5em;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+.link:visited {
+  color: #d1d1d1;
+}
+
+.link:hover {
+  color: #b6b6b6;
 }
