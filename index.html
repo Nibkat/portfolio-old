@@ -16,7 +16,7 @@
 <body>
   <button id="top-button" title="Back to top">&#x27A4;</button>
 
-  <div class="header container">
+  <div class="header">
     <div class="header-inner">
       <h1>Koen Sparreboom's portfolio 🌲</h1>
       <p class="header-link">
@@ -31,8 +31,8 @@
     </div>
   </div>
 
-  <div class="container">
-    <h1 id="about">About me 💬</h1>
+  <div class="container" id="about">
+    <h1>About me 💬</h1>
 
     <hr>
     <br>
@@ -50,10 +50,11 @@
         <br>My passion is programming for multiple reasons some of which are: the sense of improvement since there's always something
         new to learn whether it's a new language,
         <i>more stuff here</i>.</p>
-      <br>
     </div>
+  </div>
 
-    <h1 id="skills">My skills 🎓</h1>
+  <div class="container" id="skills">
+    <h1>My skills 🎓</h1>
 
     <hr>
 
@@ -61,7 +62,9 @@
       <h3>Technical skills</h3>
 
       <div class="skill">
-        <p>C#<span class="info">i</span></p>
+        <p>C#
+          <span class="info">i</span>
+        </p>
         <div class="skill-percentage">
           <div class="skill-percentage-inner" style="width: 75%;">75%</div>
         </div>
@@ -127,11 +130,13 @@
       </div>
 
       <h3>Language skills</h3>
-      
+
       <p>I can fluently speak and read English and Dutch</p>
     </div>
+  </div>
 
-    <h1 id="work">My work 📚</h1>
+  <div class="container" id="work">
+    <h1>My work 📚</h1>
 
     <hr>
 
@@ -161,9 +166,10 @@
 
     <h2>My personal projects</h2>
 
-    <br>
+  </div>
 
-    <h1 id="contact">Contact me 📝</h1>
+  <div class="container" id="contact">
+    <h1>Contact me 📝</h1>
     <hr>
     <br>
 
@@ -179,15 +185,18 @@
     <br>
     <span>School email:</span>
     <a class="link" href="mailto:22084@ma-web.nl">22084@ma-web.nl</a>
+    <br>
+    <br>
   </div>
+</body>
 
-  <div class="footer container">
-    <div class="footer-inner">
-      awoo
-    </div>
+<div class="footer container">
+  <div class="footer-inner">
+    awoo
   </div>
+</div>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>
