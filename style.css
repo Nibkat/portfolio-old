@@ -132,13 +132,14 @@ p {
 }
 /* end panels */
 
-.icon {
-  padding: 0 5px 0 5px;
-  filter: invert(100%);
+.fa {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px 0 5px;
   transition: transform 0.2s;
 }
 
-.icon:hover {
+.fa:hover {
   transform: scale(1.15);
 }
 
