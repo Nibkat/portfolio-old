@@ -234,3 +234,11 @@ p {
 
   cursor: pointer;
 }
+
+.twemoji img {
+  height: 1.1em;
+}
+
+.twemoji-large img {
+  height: 2em;
+}
