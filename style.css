@@ -208,15 +208,16 @@ p {
   display: inline-block;
 }
 
-.link-spacing {
-  margin: 0 1em 0 1em;
-  cursor: default;
-}
-
 .twemoji img {
   height: 1.1em;
 }
 
 .twemoji-large img {
   height: 2em;
+}
+
+.vl {
+  border-left: 2px solid #fff;
+  margin: 0 15px 0 15px;
+  display: inline;
 }
