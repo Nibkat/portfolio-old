@@ -11,11 +11,12 @@ p {
   width: 48px;
   height: 48px;
   position: fixed;
-  bottom: 15px;
+  bottom: -50px;
   right: 20px;
   z-index: 99;
   cursor: pointer;
   text-align: center;
+  transition: all .5s;
 }
 
 .header {
@@ -210,24 +211,6 @@ p {
 .link-spacing {
   margin: 0 1em 0 1em;
   cursor: default;
-}
-
-.info {
-  font-family: "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
-  font-weight: bold;
-  display: inline-block;
-  height: 1em;
-  width: 1em;
-  line-height: 1em;
-  -moz-border-radius: 30px;
-  /* or 50% */
-  border-radius: 30px;
-  /* or 50% */
-  border: 2px solid #fff;
-  color: #fff;
-  text-align: center;
-  font-size: 2em;
-  cursor: pointer;
 }
 
 .twemoji img {

@@ -7,13 +7,12 @@ $(document).ready(function () {
         $("#yearTwoPanel").slideToggle("medium");
     });
 
-    $("#top-button").hide();
     $(function toTop() {
         $(window).scroll(function () {
             if ($(this).scrollTop() > 100) {
-                $('#top-button').fadeIn("medium");
+                $('#top-button').css("bottom", "15px");
             } else {
-                $('#top-button').fadeOut("medium");
+                $('#top-button').css("bottom", "-50px");
             }
         });
 
