@@ -73,7 +73,9 @@ p {
   text-align: center;
 }
 
+
 /* start skills */
+
 .skills {
   width: 750px;
   display: inline-block;
@@ -102,9 +104,13 @@ p {
   border-radius: 5px;
   font-style: italic;
 }
+
+
 /* end skills */
 
+
 /* start panels */
+
 .flip,
 .panel {
   border: 2px solid #fff;
@@ -132,6 +138,8 @@ p {
   transform: rotate(90deg);
   transition: all .5s;
 }
+
+
 /* end panels */
 
 .fa {
@@ -218,20 +226,18 @@ p {
 .info {
   font-family: "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
   font-weight: bold;
-
   display: inline-block;
   height: 1em;
   width: 1em;
   line-height: 1em;
-
-  -moz-border-radius: 30px; /* or 50% */
-  border-radius: 30px; /* or 50% */
-
+  -moz-border-radius: 30px;
+  /* or 50% */
+  border-radius: 30px;
+  /* or 50% */
   border: 2px solid #fff;
   color: #fff;
   text-align: center;
   font-size: 2em;
-
   cursor: pointer;
 }
 
