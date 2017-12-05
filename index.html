@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Koen Sparreboom's Portfolio</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="style.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="http://twemoji.maxcdn.com/2/twemoji.min.js?2.3.1"></script>
@@ -14,26 +15,35 @@
 </head>
 
 <body>
-  <i id="top-button" class="fa fa-arrow-circle-up fa-3x" aria-hidden="true"></i>
+  <div id="top-button" class="circle-button">
+    <span class="fa fa-arrow-up" aria-hidden="true"></span>
+  </div>
 
-  <div class="header">
+  <div class="header center-content">
     <div class="header-inner">
       <h1>Koen Sparreboom's portfolio
         <span class="twemoji">🌲</span>
       </h1>
+
       <p class="header-link">
         <a onclick="scrollToId('#about')">About me
           <span class="twemoji">💬</span>
         </a>
+
         <span class="vl"></span>
+
         <a onclick="scrollToId('#skills')">My skills
           <span class="twemoji">🎓</span>
         </a>
+
         <span class="vl"></span>
+
         <a onclick="scrollToId('#work')">My work
           <span class="twemoji">📚</span>
         </a>
+
         <span class="vl"></span>
+
         <a onclick="scrollToId('#contact')">Contact me
           <span class="twemoji">📝</span>
         </a>
@@ -50,10 +60,9 @@
     <br>
 
     <div class="about">
-      <img style="border-radius:90%; border: 2px solid white" src="http://download.gamezone.com/uploads/image/data/1147949/article_post_width_Reggie_Fils_Aime.jpg"
-        width="128" height="128" alt="reggie">
+      <!--<img style="border-radius:90%; border: 2px solid white" src="" width="128" height="128" alt="me">
 
-      <br>
+      <br>-->
 
       <p class="about-me">Hello! I'm Koen Sparreboom from
         <a class="link" href="https://www.google.nl/maps/place/Strekel,+Oostzaan/@52.4341585,4.8688501,17.01z/data=!4m5!3m4!1s0x47c5fd530c911feb:0x3a366bce8e4492f1!8m2!3d52.4341472!4d4.871041"
@@ -77,9 +86,7 @@
       <h3>Technical skills</h3>
 
       <div class="skill">
-        <p>C#
-          <i class="fa fa-info-circle" aria-hidden="true"></i>
-        </p>
+        <p>C#</p>
         <div class="skill-percentage">
           <div class="skill-percentage-inner" style="width: 75%;">75%</div>
         </div>
@@ -161,7 +168,7 @@
 
     <div>
       <div id="yearOneFlip" class="flip">Year 1
-        <span class="arrow">&#x27A4;</span>
+        <span class="fa fa-angle-down" aria-hidden="true"></span>
       </div>
 
       <div id="yearOnePanel" class="panel">
@@ -173,7 +180,7 @@
 
     <div>
       <div id="yearTwoFlip" class="flip">Year 2
-        <span class="arrow">&#x27A4;</span>
+          <span class="fa fa-angle-down" aria-hidden="true"></span>
       </div>
 
       <div id="yearTwoPanel" class="panel">
@@ -190,11 +197,10 @@
       <span class="twemoji">📝</span>
     </h1>
     <hr>
-    <br>
 
-    <a href="https://github.com/LtKst" target="_blank" class="fa fa-github fa-2x"></a>
-    <a href="https://www.linkedin.com/in/koen-sparreboom-76bba314a/" target="_blank" class="fa fa-linkedin fa-2x"></a>
-    <a href="https://twitter.com/LieutenantKst" target="_blank" class="fa fa-twitter fa-2x"></a>
+    <a href="https://github.com/LtKst" class="fa fa-github fa-2x hover-opacity social-icon"></a>
+    <a href="https://www.linkedin.com/in/koen-sparreboom-76bba314a/" class="fa fa-linkedin fa-2x hover-opacity social-icon"></a>
+    <a href="https://twitter.com/LieutenantKst" class="fa fa-twitter fa-2x hover-opacity social-icon"></a>
 
     <br>
     <br>
@@ -208,11 +214,15 @@
     <br>
   </div>
 
-  <div class="footer container">
+  <div class="footer center-content">
     <div class="footer-inner">
-      <span class="twemoji twemoji-large">💤</span>
+      <span class="twemoji twemoji-large">🌸</span>
     </div>
   </div>
+
+  <!--<div style="position: fixed; top: 0; right: 0; z-index: 100; margin: 0; padding: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.8); display: flex; justify-content: center; align-items: center;">
+      <img src="https://i.imgur.com/iw4WbAA.gif" alt="">
+  </div>-->
 
   <script src="script.js"></script>
 </body>
