@@ -41,7 +41,7 @@ hr {
 
 .header {
   height: 200px;
-  background: linear-gradient( rgba(255, 195, 255, 0.45), rgba(255, 195, 255, 0.45)), url('resources/Aurora.jpg');
+  background: linear-gradient( rgba(255, 195, 255, 0.45), rgba(255, 195, 255, 0.45)), url('../resources/Aurora.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
@@ -65,7 +65,7 @@ hr {
 
 .footer {
   padding: 25px 0 25px 0;
-  background: linear-gradient( rgba(255, 195, 255, 0.45), rgba(255, 195, 255, 0.45)), url('resources/Aurora.jpg');
+  background: linear-gradient( rgba(255, 195, 255, 0.45), rgba(255, 195, 255, 0.45)), url('../resources/Aurora.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -100,7 +100,7 @@ hr {
 
 .skill-percentage-inner {
   height: 100%;
-  background: linear-gradient( rgba(255, 195, 255, 0.45), rgba(255, 195, 255, 0.45)), url('resources/Aurora.jpg');
+  background: linear-gradient( rgba(255, 195, 255, 0.45), rgba(255, 195, 255, 0.45)), url('../resources/Aurora.jpg');
   background-attachment: fixed;
   border-radius: 5px;
   font-style: italic;
