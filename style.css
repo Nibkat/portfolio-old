@@ -34,7 +34,7 @@ hr {
   position: fixed;
   bottom: -50px;
   right: 20px;
-  z-index: 99;
+  z-index: 50;
   text-align: center;
   transition: bottom .5s;
 }
@@ -241,4 +241,25 @@ hr {
   color: white;
   text-decoration: none;
   margin: 0 5px 0 5px;
+}
+
+#lightbox {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 98;
+  transition: top 1s;
+}
+
+#lightbox-image {
+  height: 80%;
+}
+
+#lightbox-close-button {
+  position: absolute;
+  top: 20px;
+  right: 40px;
 }

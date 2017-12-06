@@ -22,6 +22,18 @@ $(document).ready(function () {
             }, 400);
             return false;
         });
+
+        $(document).keyup(function (event) {
+            console.log("Handler for .keypress() called.");
+
+            if (event.which == 27) {
+                hideLightbox();
+            }
+        });
+
+        $("#lightbox").click(function () {
+            hideLightbox();
+        });
     });
 });
 
@@ -29,6 +41,15 @@ function scrollToId(id, speed = 400) {
     $('html, body').animate({
         scrollTop: $(id).offset().top
     }, speed);
+}
+
+function showLightbox(img) {
+    $("#lightbox-image").attr("src", $(img).attr("src"));
+    $("#lightbox").css("top", "0");
+}
+
+function hideLightbox() {
+    $("#lightbox").css("top", "100vh");
 }
 
 var twemojis = document.getElementsByClassName("twemoji");
