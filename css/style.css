@@ -1,3 +1,8 @@
+:root {
+  --overlay-gradient: linear-gradient( rgba(255, 195, 255, 0.45), rgba(255, 195, 255, 0.45));
+  --placeholder-color: #b3b3b3;
+}
+
 html,
 body {
   margin: 0;
@@ -11,9 +16,9 @@ hr {
   border: none;
   height: 2px;
   /* Set the hr color */
-  color: #fff;
+  color: white;
   /* old IE */
-  background-color: #fff;
+  background-color: white;
   /* Modern Browsers */
   margin: 20px;
 }
@@ -21,7 +26,7 @@ hr {
 .circle-button {
   width: 48px;
   height: 48px;
-  color: #fff;
+  color: white;
   background-color: #b68cb6;
   border-radius: 50%;
   display: flex;
@@ -41,11 +46,11 @@ hr {
 
 .header {
   height: 200px;
-  background: linear-gradient( rgba(255, 195, 255, 0.45), rgba(255, 195, 255, 0.45)), url('../resources/star.jpg');
+  background: var(--overlay-gradient), url('../resources/star.jpg');
   background-repeat: repeat;
   font-family: 'Roboto', sans-serif, Arial;
   background-color: rgb(8, 13, 15);
-  color: #fff;
+  color: white;
 }
 
 .container {
@@ -58,14 +63,14 @@ hr {
   text-align: center;
   font-family: 'Roboto', sans-serif, Arial;
   background-color: #1D1F21;
-  color: #fff;
+  color: white;
 }
 
 .footer {
   padding: 25px 0 25px 0;
-  background: linear-gradient( rgba(255, 195, 255, 0.45), rgba(255, 195, 255, 0.45)), url('../resources/star.jpg');
+  background: var(--overlay-gradient), url('../resources/star.jpg');
   background-repeat: repeat;
-  color: #fff;
+  color: white;
 }
 
 .header-inner,
@@ -96,7 +101,7 @@ hr {
 
 .skill-percentage-inner {
   height: 100%;
-  background: linear-gradient( rgba(255, 195, 255, 0.45), rgba(255, 195, 255, 0.45)), url('../resources/star.jpg');
+  background: var(--overlay-gradient), url('../resources/star.jpg');
   background-attachment: fixed;
   border-radius: 5px;
   font-style: italic;
@@ -110,7 +115,7 @@ hr {
 
 .flip,
 .panel {
-  border: 2px solid #fff;
+  border: 2px solid white;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -149,17 +154,17 @@ hr {
 
 .header-link a {
   position: relative;
-  color: #fff;
+  color: white;
   text-decoration: none;
   cursor: pointer;
 }
 
 .header-link a:hover {
-  color: #fff;
+  color: white;
 }
 
 .header-link a {
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
 
@@ -170,7 +175,7 @@ hr {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #fff;
+  background-color: white;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -185,7 +190,7 @@ hr {
 }
 
 .link {
-  color: #fff;
+  color: white;
   text-decoration: none;
   text-decoration: underline;
 }
@@ -214,7 +219,7 @@ hr {
 }
 
 .vl {
-  border-left: 2px solid #fff;
+  border-left: 2px solid white;
   margin: 0 15px 0 15px;
   display: inline;
 }
@@ -249,52 +254,58 @@ hr {
   display: none;
 }
 
-
 input[type=text],
 input[type=email] {
-    background: none;
-    border: none;
-    border-bottom: 2px solid #fff;
-    color: #fff;
-    text-align: center;
-    font-size: 1.2em;
-    width: 230px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  font-size: 1.2em;
+  width: 230px;
 }
+
 textarea,
 input[type=submit] {
-    background: none;
-    border: 2px solid #fff;
-    color: #fff;
-    font-size: 1.2em;
-    width: 230px;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  font-size: 1.2em;
+  width: 230px;
 }
+
 textarea {
-    max-width: 450px;
-    height: 10em;
+  max-width: 450px;
+  height: 10em;
 }
+
 input[type=submit] {
-    cursor: pointer;
+  cursor: pointer;
 }
+
 input[type=submit]:hover {
-    border-color: #fff;
-    color: #fff;
+  border-color: white;
+  color: white;
 }
+
 input[type=submit]:active {
-    position: relative;
-    top: 1px;
+  position: relative;
+  top: 1px;
 }
 
 ::-webkit-input-placeholder {
-  color: #b3b3b3;
+  color: var(--placeholder-color);
 }
+
 :-moz-placeholder {
-  color: #b3b3b3;
+  color: var(--placeholder-color);
 }
+
 ::-moz-placeholder {
-  color: #b3b3b3;
+  color: var(--placeholder-color);
 }
+
 :-ms-input-placeholder {
-  color: #b3b3b3;
+  color: var(--placeholder-color);
 }
 
 @media only screen and (max-width: 750px) {
@@ -303,21 +314,21 @@ input[type=submit]:active {
     display: inline-block;
   }
   .project-container {
-      width: 95%;
-      text-align: center;
+    width: 95%;
+    text-align: center;
   }
   .project-container img {
-      width: 90%;
+    width: 90%;
   }
   .project-container p {
-      margin: 1em 10% 1em 10%;
-      text-align: left;
+    margin: 1em 10% 1em 10%;
+    text-align: left;
   }
   .project-container hr {
-      display: block;
+    display: block;
   }
   .hover-opacity {
-      opacity: 1;
+    opacity: 1;
   }
   .header {
     height: auto;
@@ -336,6 +347,10 @@ input[type=submit]:active {
 }
 
 @keyframes background-movement {
-  0%   {background-position: 0px;}
-  100%  {background-position: 360px;}
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 360px;
+  }
 }
