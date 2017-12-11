@@ -257,15 +257,20 @@ input[type=email] {
     border-bottom: 2px solid #fff;
     color: #fff;
     text-align: center;
+    font-size: 1.2em;
+    width: 230px;
 }
 textarea,
 input[type=submit] {
     background: none;
     border: 2px solid #fff;
     color: #fff;
+    font-size: 1.2em;
+    width: 230px;
 }
 textarea {
     max-width: 450px;
+    height: 10em;
 }
 input[type=submit] {
     cursor: pointer;
