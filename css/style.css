@@ -1,356 +1,40 @@
-:root {
-  --overlay-gradient: linear-gradient( rgba(255, 195, 255, 0.45), rgba(255, 195, 255, 0.45));
-  --placeholder-color: #b3b3b3;
+.form-area {
+    background-color: #eee;
+    padding: 10px 40px 60px;
+    margin: 10px 0px 60px;
+    border: 1px solid #e7e7e7;
 }
 
-html,
-body {
-  margin: 0;
+a>.fa {
+    font-size: 2.5em;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.7;
+    transition: opacity .2s;
+    margin: 0 .2em 0 .2em;
 }
 
-p {
-  font-size: 1.1em;
-}
-
-hr {
-  border: none;
-  height: 2px;
-  /* Set the hr color */
-  color: white;
-  /* old IE */
-  background-color: white;
-  /* Modern Browsers */
-  margin: 20px;
-}
-
-.circle-button {
-  width: 48px;
-  height: 48px;
-  color: white;
-  background-color: #b68cb6;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-#top-button {
-  position: fixed;
-  bottom: -50px;
-  right: 20px;
-  z-index: 50;
-  text-align: center;
-  transition: bottom .5s;
-}
-
-.header {
-  height: 200px;
-  background: var(--overlay-gradient), url('../resources/star.jpg');
-  background-repeat: repeat;
-  font-family: 'Roboto', sans-serif, Arial;
-  background-color: rgb(8, 13, 15);
-  color: white;
-}
-
-.container {
-  width: 100%;
-  margin: 0;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  display: inline-block;
-  text-align: center;
-  font-family: 'Roboto', sans-serif, Arial;
-  background-color: #1D1F21;
-  color: white;
-}
-
-.footer {
-  padding: 25px 0 25px 0;
-  background: var(--overlay-gradient), url('../resources/star.jpg');
-  background-repeat: repeat;
-  color: white;
-}
-
-.header-inner,
-.footer-inner {
-  text-align: center;
-}
-
-
-/* start skills */
-
-.skills {
-  width: 750px;
-  display: inline-block;
-}
-
-.skill {
-  width: 325px;
-  display: inline-block;
-  margin: 5px;
-  /*text-align: left;*/
-}
-
-.skill-percentage {
-  background-color: rgb(58, 58, 58);
-  height: 25px;
-  border-radius: 5px;
-}
-
-.skill-percentage-inner {
-  height: 100%;
-  background: var(--overlay-gradient), url('../resources/star.jpg');
-  background-attachment: fixed;
-  border-radius: 5px;
-  font-style: italic;
-}
-
-
-/* end skills */
-
-
-/* start panels */
-
-.flip,
-.panel {
-  border: 2px solid white;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  font-size: 1.2em;
-}
-
-.flip {
-  cursor: pointer;
-}
-
-.panel {
-  border-top: none;
-  display: none;
-  padding: 25px 0 25px 0;
-}
-
-.arrow {
-  display: inline-block;
-  -ms-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  transition: all .5s ease;
-}
-
-
-/* end panels */
-
-.date {
-  top: -0.5em;
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-.header-link a {
-  position: relative;
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.header-link a:hover {
-  color: white;
-}
-
-.header-link a {
-  color: white;
-  text-decoration: none;
-}
-
-.header-link a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: white;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.header-link a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-.link {
-  color: white;
-  text-decoration: none;
-  text-decoration: underline;
-}
-
-.link:visited {
-  color: #d1d1d1;
-}
-
-.link:hover {
-  color: #b6b6b6;
-}
-
-.about-me {
-  max-width: 500px;
-  min-width: 200px;
-  display: inline-block;
-  margin: 15px;
-}
-
-.twemoji img {
-  height: 1.1em;
-}
-
-.twemoji-large img {
-  height: 2em;
-}
-
-.vl {
-  border-left: 2px solid white;
-  margin: 0 15px 0 15px;
-  display: inline;
-}
-
-.hover-opacity {
-  opacity: 0.7;
-  transition: opacity 0.2s;
-}
-
-.hover-opacity:hover {
-  opacity: 1;
-}
-
-.center-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.social-icon {
-  color: white;
-  text-decoration: none;
-  margin: 0 5px 0 5px;
-}
-
-.project-container {
-  color: white;
-  padding: 10px;
-}
-
-.project-container hr {
-  display: none;
-}
-
-input[type=text],
-input[type=email] {
-  background: none;
-  border: none;
-  border-bottom: 2px solid white;
-  color: white;
-  font-size: 1.2em;
-  width: 230px;
-}
-
-textarea,
-input[type=submit] {
-  background: none;
-  border: 2px solid white;
-  color: white;
-  font-size: 1.2em;
-  width: 230px;
-}
-
-textarea {
-  max-width: 450px;
-  height: 10em;
-}
-
-input[type=submit] {
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  border-color: white;
-  color: white;
-}
-
-input[type=submit]:active {
-  position: relative;
-  top: 1px;
-}
-
-::-webkit-input-placeholder {
-  color: var(--placeholder-color);
-}
-
-:-moz-placeholder {
-  color: var(--placeholder-color);
-}
-
-::-moz-placeholder {
-  color: var(--placeholder-color);
-}
-
-:-ms-input-placeholder {
-  color: var(--placeholder-color);
-}
-
-@media only screen and (max-width: 750px) {
-  .skills {
-    width: 95%;
-    display: inline-block;
-  }
-  .project-container {
-    width: 95%;
-    text-align: center;
-  }
-  .project-container img {
-    width: 90%;
-  }
-  .project-container p {
-    margin: 1em 10% 1em 10%;
-    text-align: left;
-  }
-  .project-container hr {
-    display: block;
-  }
-  .hover-opacity {
+a>.fa:hover {
     opacity: 1;
-  }
-  .header {
-    height: auto;
-    padding: 10px;
-  }
-  .header-link a {
-    display: block;
-    margin-bottom: .5em;
-  }
-  .vl {
-    display: none;
-  }
-  #top-button {
-    display: none;
-  }
 }
 
-@keyframes background-movement {
-  0% {
-    background-position: 0px;
-  }
-  100% {
-    background-position: 360px;
-  }
+footer {
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media only screen and (max-width: 768px) {
+    a>.fa {
+        opacity: 1;
+    }
 }
