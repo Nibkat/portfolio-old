@@ -11,8 +11,8 @@
     ?>
 
     <div class="jumbotron text-center" style="margin-top: 50px;">
-        <h1>Koen Sparreboom's portfolio</h1>
-        <h2 id="headTitle">Skills</h2>
+        <h1>Koen Sparreboom's portfolio <span class="emoji">🌲</span></h1>
+        <h2 id="headTitle">Skills <span class="emoji">🎓</span></h2>
     </div>
 
     <div class="container">

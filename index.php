@@ -11,8 +11,8 @@
     ?>
 
     <div class="jumbotron text-center" style="margin-top: 50px;">
-        <h1>Koen Sparreboom's portfolio</h1>
-        <h2 id="headTitle">Home</h2>
+        <h1>Koen Sparreboom's portfolio <span class="emoji">🌲</span></h1>
+        <h2 id="headTitle">Home <span class="emoji">🏠</span></h2>
     </div>
 
     <!--<button style="position: fixed; bottom: 0; right: 25px; border-radius: 4px 4px 0px 0px; z-index: 99" type="button" class="btn btn-lg"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>-->

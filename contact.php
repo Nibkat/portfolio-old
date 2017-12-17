@@ -11,8 +11,8 @@
     ?>
 
     <div class="jumbotron text-center" style="margin-top: 50px;">
-        <h1>Koen Sparreboom's portfolio</h1>
-        <h2 id="headTitle">Contact</h2>
+        <h1>Koen Sparreboom's portfolio <span class="emoji">🌲</span></h1>
+        <h2 id="headTitle">Contact <span class="emoji">📝</span></h2>
     </div>
 
     <div class="container-fluid" style="max-width: 1110px; padding: 0">
