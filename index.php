@@ -37,7 +37,8 @@
         $projects = array(
             new Project("Discord animate",
             "Discord animate is a project made with C# and the <a href='https://github.com/RogueException/Discord.Net' target='_blank'>Discord.Net</a> API wrapper, it animates messages within Discord by editing them at a set interval. This project was made to learn more about the Discord API and just for fun.",
-            "https://i.imgur.com/yjh7QWE.png", "https://github.com/LtKst/discord-animate", "http://ltkst.net/discordanimate/")
+            "https://i.imgur.com/yjh7QWE.png", "https://github.com/LtKst/discord-animate", "http://ltkst.net/discordanimate/"),
+            new Project("Test project", "This project isn't real, it is but a test.", "https://dummyimage.com/mediumrectangle/222222/eeeeee", "#", "#")
         );
 
         foreach($projects as $project) {
@@ -64,7 +65,7 @@
             include("html/projects.html");
         }
     ?>
-    
+
     <?php
         include('html/footer.html');
         include('html/scripts.html');
