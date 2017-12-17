@@ -15,16 +15,11 @@
         <h2 id="headTitle">Home</h2>
     </div>
 
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-md-12">
-                <?php
-                    include("html/loripsum.html");
-                ?>
-                <br>
-            </div>
-        </div>
-    </div>
+    <?php
+        for ($i = 0; $i <= 20; $i++) {
+            include("html/projects.html");
+        }
+    ?>
 
     <?php
         include('html/footer.html');

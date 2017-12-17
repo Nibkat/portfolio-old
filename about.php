@@ -18,6 +18,16 @@
     <div class="container text-center">
         <div class="row">
             <div class="col-md-12">
+                <img class="img-circle" width="200" src="https://dizivizi.com/mbb/imgs/site/default_user.png" alt="me_irl">
+            </div>
+        </div>
+        
+        <hr>
+    </div>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-12">
                 <?php
                     include("html/loripsum.html");
                 ?>
