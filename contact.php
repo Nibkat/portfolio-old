@@ -15,8 +15,8 @@
         <h2 id="headTitle">Contact</h2>
     </div>
 
-    <div class="container center">
-        <div class="col-md-12">
+    <div class="container-fluid" style="max-width: 1110px; padding: 0">
+        <div class="col-md-12" style="margin: 0; padding: 0">
             <div class="form-area">
                 <form role="form">
                     <br style="clear:both">
