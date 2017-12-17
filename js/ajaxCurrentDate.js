@@ -7,8 +7,6 @@ for (var i = 0; i < elements.length; i++) {
 
         requests[i].onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
-                console.log(this.responseText);
-                console.log(elements[i]);
                 $(elements[i]).html(this.responseText);
             }
         };
