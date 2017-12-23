@@ -1,0 +1,59 @@
+{
+    "projects": [{
+        "title": "Angry Birds",
+        "description": "grr brrds",
+        "tags": ["C#", "Unity", "2D", "School assignment"],
+        "image": "https://i.imgur.com/NUyGWi2.gif",
+        "buttons": [{
+            "text": "GitHub",
+            "icon": "github",
+            "href": "https://github.com/LtKst/angry-birds"
+        }, {
+            "text": "Website",
+            "icon": "globe",
+            "href": "http://22084.hosts.ma-cloud.nl/bewijzenmap/p2.2/idp/angry-birds/"
+        }, {
+            "text": "Download",
+            "icon": "cloud-download",
+            "href": "https://github.com/LtKst/angry-birds/releases"
+        }]
+    }, {
+        "title": "Discord Animate",
+        "description": "Discord animate is a project made with C# and the <a href='https://github.com/RogueException/Discord.Net' target='_blank'>Discord.Net</a> API wrapper, it animates messages within Discord by editing them at a set interval. This project was made to learn more about the Discord API and just for fun.",
+        "tags": ["C#", "Discord", "API"],
+        "image": "http://ltkst.net/discordanimate/resources/screenshot.png",
+        "buttons": [{
+            "text": "GitHub",
+            "icon": "github",
+            "href": "https://github.com/LtKst/discord-animate"
+        }, {
+            "text": "Website",
+            "icon":"globe",
+            "href": "http://ltkst.net/discordanimate/"
+        }]
+    }, {
+        "title": "SFML Game of Life",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid, quod res alia tota est? Quod vestri non item. Tanta vis admonitionis inest in locis; Duo Reges: constructio interrete. Nihil illinc huc pervenit. Dici enim nihil potest verius. Negare non possum. Praeclare hoc quidem. Tibi hoc incredibile, quod beatissimum. Quae sequuntur igitur? Sed haec omittamus; Haeret in salebra. Beatus sibi videtur esse moriens. Ut optime, secundum naturam affectum esse possit. Negare non possum. Sint modo partes vitae beatae. Comprehensum, quod cognitum non habet? Erat enim Polemonis. Et quidem, inquit, vehementer errat; Quare attende, quaeso.",
+        "tags": ["C++", "Conway's Game of Life", "SFML"],
+        "image": "https://i.imgur.com/iKbFX2c.gif",
+        "buttons": [{
+            "text": "GitHub",
+            "icon": "github",
+            "href": "https://github.com/LtKst/sfml-game-of-life"
+        }]
+    }, {
+        "title": "Project title",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid, quod res alia tota est? Quod vestri non item. Tanta vis admonitionis inest in locis; Duo Reges: constructio interrete. Nihil illinc huc pervenit. Dici enim nihil potest verius. Negare non possum. Praeclare hoc quidem. Tibi hoc incredibile, quod beatissimum. Quae sequuntur igitur? Sed haec omittamus; Haeret in salebra. Beatus sibi videtur esse moriens. Ut optime, secundum naturam affectum esse possit. Negare non possum. Sint modo partes vitae beatae. Comprehensum, quod cognitum non habet? Erat enim Polemonis. Et quidem, inquit, vehementer errat; Quare attende, quaeso.",
+        "tags": ["test", "test", "test"],
+        "image": "https://placeimg.com/500/260/animals",
+        "buttons": [{
+            "text": "GitHub",
+            "icon": "github",
+            "href": "javascript:void(0)"
+        }, {
+            "text": "Website",
+            "icon":"globe",
+            "href": "javascript:void(0)"
+        }]
+    }]
+}

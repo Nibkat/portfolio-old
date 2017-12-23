@@ -45,10 +45,7 @@
                     </div>
                     <br>
                     <div class="form-group">
-                        <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="500" rows="7"></textarea>
-                        <span class="help-block">
-                            <p id="characterLeft" class="help-block ">You have reached the limit</p>
-                        </span>
+                        <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="10000" rows="7"></textarea>
                     </div>
 
                     <div id="emailInfo" class="alert alert-warning">

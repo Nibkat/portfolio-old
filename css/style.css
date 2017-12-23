@@ -5,7 +5,7 @@
     border: 1px solid #e7e7e7;
 }
 
-a>.fa {
+a>.footer-link {
     font-size: 2.5em;
     text-decoration: none;
     color: #fff;
@@ -14,7 +14,7 @@ a>.fa {
     margin: 0 .2em 0 .2em;
 }
 
-a>.fa:hover {
+a>.footer-link:hover {
     opacity: 1;
 }
 
@@ -43,7 +43,7 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-    a>.fa {
+    a>.footer-link {
         opacity: 1;
     }
 }

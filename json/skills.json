@@ -1,0 +1,9 @@
+{
+    "skills": [{
+        "name": "C#",
+        "percentage": 100
+    }, {
+        "name": "C++",
+        "percentage": 80
+    }]
+}
