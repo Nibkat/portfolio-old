@@ -1,8 +1,8 @@
 {
     "projects": [{
         "title": "Angry Birds",
-        "description": "grr brrds",
-        "tags": ["C#", "Unity", "2D", "School assignment"],
+        "description": "A small segment of Angry Birds remade in Unity with C# for an assignment at Mediacollege. Made with a team of 3 programmers and 3 artists in 4 weeks time.",
+        "tags": ["C#", "Unity", "2D", "School assignment", "Team", "Game"],
         "image": "https://i.imgur.com/NUyGWi2.gif",
         "buttons": [{
             "text": "GitHub",
@@ -19,8 +19,8 @@
         }]
     }, {
         "title": "Discord Animate",
-        "description": "Discord animate is a project made with C# and the <a href='https://github.com/RogueException/Discord.Net' target='_blank'>Discord.Net</a> API wrapper, it animates messages within Discord by editing them at a set interval. This project was made to learn more about the Discord API and just for fun.",
-        "tags": ["C#", "Discord", "API"],
+        "description": "Discord animate is a project made with C# and the <a href='https://github.com/RogueException/Discord.Net' target='_blank'>Discord.Net</a> API wrapper, it animates messages within Discord by editing them at a set interval. This project was made to learn more about the APIs, web socket clients and just for fun.",
+        "tags": ["C#", "Discord", "API", "Program"],
         "image": "http://ltkst.net/discordanimate/resources/screenshot.png",
         "buttons": [{
             "text": "GitHub",
@@ -28,8 +28,12 @@
             "href": "https://github.com/LtKst/discord-animate"
         }, {
             "text": "Website",
-            "icon":"globe",
+            "icon": "globe",
             "href": "http://ltkst.net/discordanimate/"
+        }, {
+            "text": "Download",
+            "icon": "cloud-download",
+            "href": "http://ltkst.net/discordanimate/download/discord-animate.zip"
         }]
     }, {
         "title": "SFML Game of Life",
@@ -40,6 +44,10 @@
             "text": "GitHub",
             "icon": "github",
             "href": "https://github.com/LtKst/sfml-game-of-life"
+        }, {
+            "text": "Download",
+            "icon": "cloud-download",
+            "href": "http://ltkst.net/discordanimate/download/discord-animate.zip"
         }]
     }, {
         "title": "Project title",
@@ -47,12 +55,8 @@
         "tags": ["test", "test", "test"],
         "image": "https://placeimg.com/500/260/animals",
         "buttons": [{
-            "text": "GitHub",
-            "icon": "github",
-            "href": "javascript:void(0)"
-        }, {
-            "text": "Website",
-            "icon":"globe",
+            "text": "test",
+            "icon": "heart",
             "href": "javascript:void(0)"
         }]
     }]

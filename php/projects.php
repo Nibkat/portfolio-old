@@ -8,14 +8,16 @@
                 <div class='row'>
                     <div class='col-md-6'>
                         <h1>$project->title</h1>
-                        <p>";
+                        <div>";
                         
+                        sort($project->tags);
+
                         foreach($project->tags as $tag) {
-                            echo "<kbd>$tag</kbd> ";
+                            echo "<kbd class='tag'>$tag</kbd> ";
                         }
                         
                         echo
-                        "</p>
+                        "</div><br>
                         <div class='btn-group'>";
 
                             foreach($project->buttons as $button) {

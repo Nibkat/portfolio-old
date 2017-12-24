@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Koen Sparreboom's portfolio website">
+    <meta name="keywords" content="Portfolio,Koen Sparreboom,C#,Unity,C++">
+    <meta name="author" content="Koen Sparreboom">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Koen Sparreboom's portfolio</title>
+    <link rel="icon" href="resources//favicon.png">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://twemoji.maxcdn.com/2/twemoji.min.js?2.3.1"></script>
+</head>
+
+<body>
+    <div class="container" style="margin:0;">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Add a project</h1>
+
+                <hr>
+
+                <form id="formId" action="addproject.php" method="POST">
+
+                    <p>Project title</p>
+                    <input onkeyup="reloadPreview()" type="text" name="title" id="title" value="Project title" placeholder="Project title">
+
+                    <br>
+                    <br>
+
+                    <p>Description</p>
+                    <textarea onkeyup="reloadPreview()" name="description">Lorem ipsum</textarea>
+
+                    <br>
+                    <br>
+
+                    <p>Tags</p>
+                    <div id="tag_wrapper">
+                        <button id="add_tag_button">Add tag</button>
+                        <br>
+                        <br>
+                        <div>
+                            <input onkeyup="reloadPreview()" type="text" name="tags[]" placeholder="C#">
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <p>Image</p>
+                    <input onkeyup="reloadPreview()" type="text" id="image" name="image" value="https://placeimg.com/500/260/animals" placeholder="Image">
+
+                    <br>
+                    <br>
+
+                    <p>Buttons</p>
+                    <div id="buttons_wrapper">
+                        <button id="add_button_button">Add button</button>
+                        <br>
+                        <br>
+                        <div>
+                            Text <input onkeyup="reloadPreview()" type="text" name="buttons[0][text]" placeholder="Button"><br>
+                            Href <input onkeyup="reloadPreview()" type="text" name="buttons[0][href]" placeholder="http://ltkst.net/"><br>
+                            Icon <input onkeyup="reloadPreview()" type="text" name="buttons[0][icon]" placeholder="globe">
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <p>Password</p>
+                    <input type="password" name="password" id="password">
+
+                    <br>
+                    <br>
+
+                    <input type="submit" value="Add to projects.json">
+                    <input onclick="reloadPreview()" id="preview" type="button" value="Preview">
+
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h1>Preview</h1>
+                <hr>
+
+                <div class="container" id="preview-wrapper">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            var tag_wrapper = $("#tag_wrapper");
+            var add_tag_button = $("#add_tag_button");
+
+            $(add_tag_button).click(function (e) {
+                e.preventDefault();
+                $(tag_wrapper).append(
+                    '<div><input onkeyup="reloadPreview()" type="text" name="tags[]"/><a href="#" class="remove_field"> x</a></div>'
+                );
+            });
+
+            $(tag_wrapper).on("click", ".remove_field", function (e) {
+                e.preventDefault();
+                $(this).parent('div').remove();
+            });
+
+            var buttons_wrapper = $("#buttons_wrapper");
+            var add_button_button = $("#add_button_button");
+
+            var buttonCount = 0;
+
+            $(add_button_button).click(function (e) {
+                buttonCount++;
+                e.preventDefault();
+                $(buttons_wrapper).append(
+                    '<div><br>Text <input onkeyup="reloadPreview()" type="text" name="buttons[' + buttonCount +
+                    '][text]" placeholder="Button"><br> Href <input onkeyup="reloadPreview()" type="text" name="buttons[' +
+                    buttonCount +
+                    '][href]" placeholder="http://ltkst.net/"><br> Icon <input onkeyup="reloadPreview()" type="text" name="buttons[' +
+                    buttonCount +
+                    '][icon]" placeholder="globe"><a href="#" class="remove_field"> x</a></div>'
+                );
+            });
+
+            $(buttons_wrapper).on("click", ".remove_field", function (e) {
+                e.preventDefault();
+                $(this).parent('div').remove();
+            });
+        });
+
+        function reloadPreview() {
+            var url = "previewproject.php";
+
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: $("#formId").serialize(),
+                success: function (data) {
+                    $("#preview-wrapper").html(data);
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

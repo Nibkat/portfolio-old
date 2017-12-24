@@ -1,6 +1,4 @@
 $(document).ready(function () {
-    console.log(window.location.pathname);
-
     $(function () {
         if (window.location.pathname.endsWith("index.php")) {
             $(".nav-page-button").first().addClass("active");
