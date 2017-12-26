@@ -20,7 +20,7 @@
     }, {
         "title": "Discord Animate",
         "description": "Discord animate is a project made with C# and the <a href='https://github.com/RogueException/Discord.Net' target='_blank'>Discord.Net</a> API wrapper, it animates messages within Discord by editing them at a set interval. This project was made to learn more about the APIs, web socket clients and just for fun.",
-        "tags": ["C#", "Discord", "API", "Program"],
+        "tags": ["C#", "Discord", "API", "Forms app"],
         "image": "http://ltkst.net/discordanimate/resources/screenshot.png",
         "buttons": [{
             "text": "GitHub",
@@ -36,10 +36,20 @@
             "href": "http://ltkst.net/discordanimate/download/discord-animate.zip"
         }]
     }, {
+        "title": "Discord Spotify",
+        "description": "A simple C# form application that uses C# web API wrappers for Discord and Spotify to display what song you're playing on Spotify as a Discord playing status. This project was made to further improve my knowledge of socket clients and for fun.",
+        "tags": ["C#", "API", "Discord", "Spotify", "Forms app"],
+        "image": "https:/i.imgur.com/0LR2BoV.png",
+        "buttons": [{
+            "text": "GitHub",
+            "href": "https://github.com/LtKst/discord-spotify",
+            "icon": "github"
+        }]
+    }, {
         "title": "SFML Game of Life",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid, quod res alia tota est? Quod vestri non item. Tanta vis admonitionis inest in locis; Duo Reges: constructio interrete. Nihil illinc huc pervenit. Dici enim nihil potest verius. Negare non possum. Praeclare hoc quidem. Tibi hoc incredibile, quod beatissimum. Quae sequuntur igitur? Sed haec omittamus; Haeret in salebra. Beatus sibi videtur esse moriens. Ut optime, secundum naturam affectum esse possit. Negare non possum. Sint modo partes vitae beatae. Comprehensum, quod cognitum non habet? Erat enim Polemonis. Et quidem, inquit, vehementer errat; Quare attende, quaeso.",
         "tags": ["C++", "Conway's Game of Life", "SFML"],
-        "image": "https://i.imgur.com/iKbFX2c.gif",
+        "image": "https://i.imgur.com/vnZhdRA.gif",
         "buttons": [{
             "text": "GitHub",
             "icon": "github",
@@ -48,6 +58,20 @@
             "text": "Download",
             "icon": "cloud-download",
             "href": "http://ltkst.net/discordanimate/download/discord-animate.zip"
+        }]
+    }, {
+        "title": "Unity Game of Life",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid, quod res alia tota est? Quod vestri non item. Tanta vis admonitionis inest in locis; Duo Reges: constructio interrete. Nihil illinc huc pervenit. Dici enim nihil potest verius. Negare non possum. Praeclare hoc quidem. Tibi hoc incredibile, quod beatissimum. Quae sequuntur igitur? Sed haec omittamus; Haeret in salebra. Beatus sibi videtur esse moriens. Ut optime, secundum naturam affectum esse possit. Negare non possum. Sint modo partes vitae beatae. Comprehensum, quod cognitum non habet? Erat enim Polemonis. Et quidem, inquit, vehementer errat; Quare attende, quaeso.",
+        "tags": ["C#", "Unity", "School assignment", "Conway's Game of Life"],
+        "image": "https://i.imgur.com/t0VrGT0.gif",
+        "buttons": [{
+            "text": "GitHub",
+            "icon": "github",
+            "href": "https://github.com/LtKst/unity-game-of-life"
+        }, {
+            "text": "Website",
+            "icon": "globe",
+            "href": "http://22084.hosts.ma-cloud.nl/bewijzenmap/p2.1/gpr/game-of-life/"
         }]
     }, {
         "title": "Project title",

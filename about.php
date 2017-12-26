@@ -7,8 +7,8 @@
 
     <body>
         <?php
-        include('html/navbar.html');
-    ?>
+            include('html/navbar.html');
+        ?>
 
             <div class="jumbotron text-center" style="margin-top: 50px;">
                 <h1>Koen Sparreboom's portfolio
@@ -42,10 +42,10 @@
                 </div>
             </div>
 
-            <?php
-        include('html/footer.html');
-        include('html/scripts.html');
-    ?>
+        <?php
+            include('html/footer.html');
+            include('html/scripts.html');
+        ?>
 
     </body>
 

@@ -22,16 +22,17 @@
                 for ($i = 0; $i < 25; $i++) {
                     $rnd = rand(10, 100);
 
-                    echo "<div class='col-sm-4'>
-                    <h3>Column $i</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-                    <div class='progress'>
-                        <div class='progress-bar' role='progressbar' aria-valuenow='$rnd' aria-valuemin='0' aria-valuemax='100' style='width:$rnd%'>
-                            $rnd%
+                    echo
+                    "<div class='col-sm-4'>
+                        <h3>Column $i</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                        <div class='progress'>
+                            <div class='progress-bar' role='progressbar' aria-valuenow='$rnd' aria-valuemin='0' aria-valuemax='100' style='width:$rnd%'>
+                                $rnd%
+                            </div>
                         </div>
-                    </div>
-                </div>";
+                    </div>";
                 }
 
             ?>

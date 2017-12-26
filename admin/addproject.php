@@ -1,5 +1,5 @@
 <?php
 
-    echo "this doesn't work yet";
+    echo (json_encode($_POST));
 
 ?>

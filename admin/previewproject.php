@@ -1,4 +1,5 @@
 <?php
+    include "../php/generate_project.php";
 
     $title = $_POST["title"];
     $description = $_POST["description"];
@@ -6,56 +7,21 @@
     $image = $_POST["image"];
 
     $buttons = $_POST["buttons"];
+    $buttons_final = array();
+
+    foreach($buttons as $button) {
+        $object = new stdClass();
+        $object->text = $button['text'];
+        $object->href = $button['href'];
+        $object->icon = $button['icon'];
+
+        var_dump($object);
+
+        array_push($buttons_final, $object);
+    }
 
     $password = $_POST["password"];
     $correct_password = "spar";
 
-    echo "<div class='container'>
-    <div class='row'>
-        <div class='col-md-6'>
-            <h1>$title</h1>
-            <div>";
-            
-            sort($tags);
-
-            foreach($tags as $tag) {
-                echo "<kbd class='tag'>$tag</kbd> ";
-            }
-            
-            echo
-            "</div><br>
-            <div class='btn-group'>";
-
-                foreach($buttons as $button) {
-                    $text = $button['text'];
-                    $href = $button['href'];
-                    $icon = $button['icon'];
-
-                    echo "
-                        <a href='$href' type='button' class='btn btn-primary'>
-                            <i class='fa fa-lg fa-$icon fa-fw' aria-hidden='true'></i>&nbsp; $text
-                        </a>
-                    ";
-                }
-
-            echo "</div>
-
-            <br>
-            <br>
-
-            <p>$description</p>
-
-    </div>
-
-    <div class='col-md-6 text-center'>
-        <img src='$image' style='width: 100%' alt='project image'>
-    </div>
-
-    <div class='col-md-12'>
-        <br>
-    </div>
-</div>
-<hr>
-</div>";
-
+    echo generate_project($title, $tags, $buttons_final, $description, $image);
 ?>
