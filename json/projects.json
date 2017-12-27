@@ -48,7 +48,7 @@
     }, {
         "title": "SFML Game of Life",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid, quod res alia tota est? Quod vestri non item. Tanta vis admonitionis inest in locis; Duo Reges: constructio interrete. Nihil illinc huc pervenit. Dici enim nihil potest verius. Negare non possum. Praeclare hoc quidem. Tibi hoc incredibile, quod beatissimum. Quae sequuntur igitur? Sed haec omittamus; Haeret in salebra. Beatus sibi videtur esse moriens. Ut optime, secundum naturam affectum esse possit. Negare non possum. Sint modo partes vitae beatae. Comprehensum, quod cognitum non habet? Erat enim Polemonis. Et quidem, inquit, vehementer errat; Quare attende, quaeso.",
-        "tags": ["C++", "Conway's Game of Life", "SFML"],
+        "tags": ["2D", "C++", "Game", "SFML"],
         "image": "https://i.imgur.com/vnZhdRA.gif",
         "buttons": [{
             "text": "GitHub",
@@ -62,7 +62,7 @@
     }, {
         "title": "Unity Game of Life",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid, quod res alia tota est? Quod vestri non item. Tanta vis admonitionis inest in locis; Duo Reges: constructio interrete. Nihil illinc huc pervenit. Dici enim nihil potest verius. Negare non possum. Praeclare hoc quidem. Tibi hoc incredibile, quod beatissimum. Quae sequuntur igitur? Sed haec omittamus; Haeret in salebra. Beatus sibi videtur esse moriens. Ut optime, secundum naturam affectum esse possit. Negare non possum. Sint modo partes vitae beatae. Comprehensum, quod cognitum non habet? Erat enim Polemonis. Et quidem, inquit, vehementer errat; Quare attende, quaeso.",
-        "tags": ["C#", "Unity", "School assignment", "Conway's Game of Life"],
+        "tags": ["2D", "C#", "Unity", "School assignment", "Game"],
         "image": "https://i.imgur.com/t0VrGT0.gif",
         "buttons": [{
             "text": "GitHub",

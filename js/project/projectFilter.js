@@ -1,46 +1,81 @@
-$(document).ready(function () {
-    var projects = [];
+var projects = [];
 
+var tagElements;
+var tags = [];
+
+var tagFilters;
+
+$(document).ready(function () {
     for (let i = 0; i < $(".project").length; i++) {
         projects.push(new Project($(".project").eq(i)));
     }
 
-    var tagElements = $(".tag");
-    var allTags = [];
+    // create array for all existing tags
+    tagElements = $(".tag");
 
     for (let i = 0; i < tagElements.length; i++) {
-        if (!allTags.includes($(tagElements[i]).html())) {
-            allTags.push($(tagElements[i]).html());
+        if (!tags.includes($(tagElements[i]).html())) {
+            tags.push($(tagElements[i]).html());
         }
     }
 
-    allTags.sort();
+    tags.sort();
 
-    $("#tag-list").append("<a href='javascript:void(0)' class='list-group-item active'>All</a>");
+    // generate tag filter elements
+    $("#tag-filter-list").append("<a href='javascript:void(0)' class='list-group-item active'>All</a>");
 
-    for (let i = 0; i < allTags.length; i++) {
-        $("#tag-list").append("<a href='javascript:void(0)' class='list-group-item active'>" + allTags[i] + "</a>");
+    for (let i = 0; i < tags.length; i++) {
+        $("#tag-filter-list").append("<a href='javascript:void(0)' class='list-group-item tag-filter active'>" + tags[i] + "</a>");
     }
 
-    $(".list-group-item").click(function () {
-        let hide = false;
+    tagFilters = $(".tag-filter");
 
-        if ($(this).hasClass("active")) {
+    $(".tag-filter").click(function () {
+        let filterTag = $(this).hasClass("active");
+
+        if (filterTag) {
             $(this).removeClass("active");
-            hide = true;
         } else {
             $(this).addClass("active");
-            hide = false;
         }
 
-        for (let i = 0; i < projects.length; i++) {
-            if (projects[i].tags.includes($(this).html())) {
-                if (hide) {
-                    $(projects[i].element).slideUp();
-                } else {
-                    $(projects[i].element).slideDown();
-                }
-            }
-        }
+        filter();
     });
 });
+
+function selectTag(tag) {
+    for (let i = 0; i < tagFilters.length; i++) {
+        if ($(tagFilters[i]).html() == tag) {
+            $(tagFilters[i]).addClass("active");
+        } else {
+            $(tagFilters[i]).removeClass("active");
+        }
+    }
+
+    filter();
+}
+
+function filter() {
+    let activeTags = [];
+
+    for (let i = 0; i < tagFilters.length; i++) {
+        if ($(tagFilters[i]).hasClass("active")) {
+            activeTags.push($(tagFilters[i]).html());
+        }
+    }
+
+    for (let i = 0; i < projects.length; i++) {
+        let hidden = true;
+
+        for (let j = 0; j < activeTags.length; j++) {
+            if (projects[i].tags.includes(activeTags[j])) {
+                $(projects[i].element).slideDown();
+                hidden = false;
+            }
+        }
+
+        if (hidden) {
+            $(projects[i].element).slideUp();
+        }
+    }
+}

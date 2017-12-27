@@ -6,7 +6,7 @@
         sort($tags);
         
         foreach($tags as $tag) {
-            $tags_final .= "<a href='javascript:void(0)'><kbd class='tag'>$tag</kbd></a> ";
+            $tags_final .= "<a href='javascript:void(0)' onclick='selectTag(" . '"' . $tag . '"' . ")'><kbd class='tag'>$tag</kbd></a> ";
         }
 
         foreach($buttons as $button) {
